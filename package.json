@@ -1,0 +1,21 @@
+{
+  "name": "react-ecosystems",
+  "version": "1.0.0",
+  "description": "learning react's ecosystem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "React-Ecosystems"
+  },
+  "author": "Mukendi Mputu",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7"
+  }
+}

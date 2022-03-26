@@ -10,7 +10,7 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /(node_modules)/,
                 loader: 'babel-loader',
-                options: { presets: ["@babel/env"] }
+                options: { presets: ["@babel/env", "@babel/preset-react"] }
             },
             {
                 test: /\.css$/,
@@ -25,10 +25,10 @@ module.exports = {
         filename: 'bundle.js'
     },
     devServer: {
-        contentBase: path.join(__dirname, 'public/'),
-        port: 3000,
-        publicPath: 'http://localhost:3000/dist/',
-        hotOnly: true
+        static: {
+            directory: path.join(__dirname, 'public/'),
+            serveIndex: true,
+        }
     },
     plugins: [new webpack.HotModuleReplacementPlugin()]
 };
